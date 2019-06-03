@@ -2,6 +2,8 @@ import java.util.Arrays;
 
 import javax.swing.JOptionPane;
 
+/*Slumpar 100 nummer, sorterar dem, skriver ut dem*/
+
 public class Sorting {
 
 	public static void main(String[] args) {
@@ -13,8 +15,8 @@ public class Sorting {
 		Arrays.sort(numbers);
 		String message = "";
 		for (int i = 0; i < numbers.length; i++) {
-			message += numbers[i] + " ";
-			if ((i + 1) % 5 == 0) {
+			message += numbers[i] + " ";	//uppdaterar "message" med nästan nummer och lägger till ett mellanrum
+			if ((i + 1) % 5 == 0) {		//byter rad efter var femte siffra
 				message += "\n";
 			}
 		}
